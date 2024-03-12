@@ -2,33 +2,23 @@ package com.example.activity_cc106_real;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.StrictMode;
-import android.util.Log;
 import android.view.View;
-import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.io.BufferedReader;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.HttpURLConnection;
-import java.net.URL;
-
 public class MainActivity extends AppCompatActivity {
 
-    TextView tv;
+/*    TextView tv;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tv = findViewById(R.id.tv1);
-        StrictMode.enableDefaults();
+ /*       tv = findViewById(R.id.tv1);
+        StrictMode.enableDefaults();*/
 
-        try {
-            URL url = new URL("http://192.168.100.155:8080/myapplication/connect.php");
+ /*       try {
+            URL url = new URL("http://192.168.100.155/myapplication/connect.php");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("GET");
 
@@ -49,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         } catch (Exception e) {
             Log.e("Fail 1", e.toString());
             Toast.makeText(getApplicationContext(), e.toString(), Toast.LENGTH_LONG).show();
-        }
+        }*/
     }
 
     public void goToNextActivity(View view) {

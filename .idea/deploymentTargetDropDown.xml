@@ -5,6 +5,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="connect">
+        <State />
+      </entry>
       <entry key="counter">
         <State />
       </entry>
