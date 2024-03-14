@@ -71,7 +71,6 @@ public class sql extends AppCompatActivity {
                 StringBuilder builder = new StringBuilder("USER LIST\n");
                 while (rs.next()) {
                     builder.append(rs.getString("uname")).append("\n");
-                    builder.append(rs.getString("uname"));
                 }
                 name = builder.toString();
             } catch (SQLException e) {
